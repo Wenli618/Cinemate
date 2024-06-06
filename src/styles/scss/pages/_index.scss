@@ -1,0 +1,29 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.movieSection{
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+    .movieContainer{
+        display: flex;
+        flex-direction: column;
+        .titleRow{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            h2{
+                color: $complementaryColor;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            a{
+                font-size: 1rem;
+                color: $complementaryColor;
+                &:hover{
+                    color: $brandSkewColor;
+                }
+            }
+        }
+    }
+}

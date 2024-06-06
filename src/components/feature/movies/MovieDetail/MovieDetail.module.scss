@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column; // Handle small screens
+    width: 100%;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap:2% 
+      }
+    .imageContainer {
+        width: 100%;
+        flex: 1;
+        .image {
+            width: 100%;
+            height: auto;
+          }
+          @media (min-width: 768px) {
+            width: 40%;
+            flex:auto
+          }
+      }
+      .detailsContainer {
+        flex: 1;
+        padding: 1rem;
+        @media (min-width: 768px) {
+            width: 58%;
+            flex:auto
+          }
+      }
+      
+  }
+
+  
+  
+  
+  
+ 
+  
+
+  
+  
+  

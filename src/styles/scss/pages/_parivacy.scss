@@ -1,0 +1,15 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.privacy{
+    margin:0 auto;
+    padding: 2rem 0;
+    width: 80vw;
+    max-width: 1200px;
+    color: $highlightColor;
+    ul{
+        margin-bottom: 1.5rem;
+       li{
+        margin-bottom: 1rem;
+       }
+    }
+}

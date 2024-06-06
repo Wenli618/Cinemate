@@ -1,0 +1,23 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.contactDiv{
+    margin:0 auto;
+    width: 80vw;
+    max-width: 1200px;
+    color: $highlightColor;
+    h2{
+        color: $brandColor;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom:0.5rem;
+    }
+    h3{
+        color: $complementaryColor;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom:0;
+    }
+    p{
+        margin: 0;
+    }
+}
