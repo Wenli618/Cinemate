@@ -1,0 +1,21 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.movieContainer{
+    margin:1rem auto 2rem;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    width: 80vw;
+    max-width: 1200px;
+    .trailer{
+        color: $complementaryColor;
+        background-color: $primaryColor;
+        border-radius: 5px;
+        font-weight: bold;
+        iframe{
+            margin: 0 auto;
+        }
+    }
+}

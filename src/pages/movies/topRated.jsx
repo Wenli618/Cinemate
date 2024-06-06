@@ -5,8 +5,7 @@ import HeroSection from '@/components/feature/HeroSection';
 
 function TopRated(props) {
   const { topRated } = props; 
-  console.log(topRated)
-
+ 
   return (
     <Fragment>
       <Head>
@@ -22,7 +21,7 @@ function TopRated(props) {
         description='Review top-rated movies!'
         bgImage='/backgrounds/cinema.jpg'
       />
-      
+
       {topRated.length > 0 && <MovieList movies={topRated} />}
     </Fragment>
   );

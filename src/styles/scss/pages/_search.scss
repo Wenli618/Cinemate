@@ -1,0 +1,10 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.searchContainer{
+  margin: 2rem auto;
+  width: 80vw;
+  max-width: 1200;
+  color: $brandColor;
+  display: flex;
+  justify-content: center;
+}

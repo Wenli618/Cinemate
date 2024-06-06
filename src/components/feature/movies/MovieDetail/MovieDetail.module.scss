@@ -1,3 +1,4 @@
+@use '@/styles/scss/abstracts/' as *;
 .container {
     display: flex;
     flex-direction: column; // Handle small screens
@@ -24,6 +25,11 @@
         @media (min-width: 768px) {
             width: 58%;
             flex:auto
+          }
+        .title {
+            &:hover{
+                color: $brandSkewColor;
+            }
           }
       }
       

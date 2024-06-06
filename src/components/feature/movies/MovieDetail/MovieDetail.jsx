@@ -1,10 +1,12 @@
 import styles from './MovieDetail.module.scss';
 import Image from 'next/image';
 import Card from '@/components/common/Card';
+import Link from 'next/link';
 
-function MovieDetail({ movie, posterUrl, directedBy, cast }) {
+function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
   return (
-    <Card size="single">
+    <div>
+      <Card size="single">
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image 
@@ -17,7 +19,10 @@ function MovieDetail({ movie, posterUrl, directedBy, cast }) {
           />
         </div>
         <div className={styles.detailsContainer}>
-          <h1>{movie.title}</h1>
+          <Link href={homepage} target='_blank'>
+            <h1 className={styles.title}>{movie.title}</h1>
+          </Link>
+          
           <div className={styles.info}>
             <div className={styles.infoItem}>
               <h3>Score:</h3>
@@ -46,8 +51,13 @@ function MovieDetail({ movie, posterUrl, directedBy, cast }) {
           </div>
         </div>
       </div>
-    </Card>
+      </Card>
+      
+    </div>
+   
+    
   );
 }
+
 
 export default MovieDetail;

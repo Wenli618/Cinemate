@@ -5,8 +5,7 @@ import HeroSection from '@/components/feature/HeroSection';
 
 function Popular(props) {
   const { popular } = props; 
-  console.log(popular)
-
+ 
   return (
     <Fragment>
       <Head>

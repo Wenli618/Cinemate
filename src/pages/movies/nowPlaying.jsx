@@ -5,8 +5,7 @@ import HeroSection from '@/components/feature/HeroSection';
 
 function NowPlaying(props) {
   const { nowPlaying } = props; 
-  console.log(nowPlaying)
-
+ 
   return (
     <Fragment>
       <Head>

@@ -5,7 +5,6 @@ import HeroSection from '@/components/feature/HeroSection';
 
 function Upcoming(props) {
   const { upcoming } = props; 
-  console.log(upcoming)
 
   return (
     <Fragment>
