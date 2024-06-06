@@ -19,7 +19,7 @@ function HomePage({nowPlaying,upcoming,popular,topRated}) {
       <main>
         <HeroSection 
           title='Your Ultimate MOVIE Guide' 
-          description="Whether you're a movie enthusiast or just looking for something to watch, we've got you covered!"
+          description="Whether you&apos;re a movie enthusiast or just looking for something to watch, we&apos;ve got you covered!"
           bgImage="/backgrounds/cinema.jpg"
         />
         <div className='movieSection'>
