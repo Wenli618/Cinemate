@@ -1,0 +1,193 @@
+@use '@/styles/scss/abstracts/' as *;
+
+
+$black: #4c4c4c;
+$white: #eaeaea;
+$gray: #808080;
+
+$text-arrow-space: 16px;
+$shaft-width: 1px;
+$newshaft-width: 64px;
+$shaft-thickness: 1px;
+$arrow-head-width: 8px;
+$arrow-head-thickness: $shaft-thickness;
+
+.container {
+  display: flex;
+  align-items: center;
+  // The Arrow
+
+.arrow {
+    width: 1px;
+    transition: all 0.2s;
+   
+    &.arrowLeft {
+      position: absolute;
+      top: 60%;
+      left: 0;
+  
+      > .shaft {
+        width: 0;
+        background-color: #4c4c4c;
+        
+        &:before,
+        &:after {
+          width: 0;
+          background-color: #4c4c4c;
+        }
+  
+        &:before {
+          transform: rotate(0);
+        }
+  
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+    
+    &.arrowRight {
+      top: 3px;
+      
+      > .shaft {
+        width: 1px;
+        transition-delay: 0.2s;
+  
+        &:before,
+        &:after { 
+          width: 8px;
+          transition-delay: 0.3s;
+          transition: all 0.5s;
+        }
+        
+        &:before {
+          transform: rotate(40deg);
+        }
+        
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+  
+    > .shaft {
+      background-color: #424242;
+      display: block;
+      height: 1px;
+      position: relative;
+      transition: all 0.2s;
+      transition-delay: 0;
+      will-change: transform;
+  
+      &:before,
+      &:after {
+        background-color: $brandColor;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0;
+      }
+  
+      &:before {
+        transform-origin: top right;
+      }
+  
+      &:after {
+        transform-origin: bottom right;
+      }
+    }
+  }
+
+// Animated Arrow Button
+
+.animatedArrow {
+    display: inline-block;
+    color: #4c4c4c;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+    
+    &:hover {
+      color: $brandColor;
+      
+      > .arrow.arrowLeft {
+        > .shaft {
+          width: 30px;
+          transition-delay: 0.1s;
+          background-color: $brandColor;
+  
+          &:before,
+          &:after {
+            width: 8px;
+            transition-delay: 0.1s;
+            background-color: $brandColor;
+          }
+  
+          &:before {
+            transform: rotate(40deg);
+          }
+  
+          &:after {
+            transform: rotate(-40deg);
+          }
+        }
+      }
+      
+      > .main {
+        transform: translateX(1px + 16px);
+        transform: translateX(30px + 16px);
+        
+        > .arrow.arrowRight {
+          > .shaft {
+            width: 0;
+            transform: translateX(200%);
+            transition-delay: 0;
+            
+            &:before,
+            &:after {
+              width: 0;
+              transition-delay: 0;
+              transition: all 0.1s;
+            }
+  
+            &:before {
+              transform: rotate(0);
+            }
+  
+            &:after {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+    
+    > .main {
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
+      
+      > .text {
+        margin: 0 16px 0 0;
+        line-height: 1;
+      }
+      
+      > .arrow {
+        position: relative;
+      }
+    }
+  }
+  
+
+}
+
+
+
+
+

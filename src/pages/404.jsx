@@ -1,6 +1,8 @@
 import HeroSection from "@/components/feature/HeroSection"
 import { useRouter } from "next/router"
 
+import ArrowButton from "@/components/feature/ArrowButton"
+
 function NotFound() {
     const router = useRouter()
   return (
@@ -12,8 +14,12 @@ function NotFound() {
             isOverlay = {true}
         />
         <div className="notFoundContainer">
-            <button onClick={()=>router.back()}>Reel Back</button>
+        <ArrowButton 
+                text='Reel Back' 
+                link='/movies/nowPlaying'
+              />
         </div>
+        
         
     </div>
   )

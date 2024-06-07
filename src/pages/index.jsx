@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import HeroSection from '@/components/feature/HeroSection';
 import MovieList from '@/components/feature/movies/MovieList';
+import ArrowButton from '@/components/feature/ArrowButton';
 
 
 
@@ -26,37 +27,46 @@ function HomePage({nowPlaying,upcoming,popular,topRated}) {
           <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Now Playing</h2>
-              <Link href='/movies/nowPlaying'>View More</Link>
+              <ArrowButton 
+                text='View More' 
+                link='/movies/nowPlaying'
+              />
             </div>
             {nowPlaying.length > 0 && <MovieList movies={nowPlaying} />}
           </div>
           <div className='moviesContainer'>
             <div className='titleRow'>
               <h2 >Upcoming</h2>
-              <Link href='/movies/upcoming'>View More</Link>
+              <ArrowButton 
+                text='View More' 
+                link='/movies/nowPlaying'
+              />
             </div>
             {upcoming.length > 0 && <MovieList movies={upcoming} />}
           </div>
           <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Popular</h2>
-              <Link href='/movies/popular'>View More</Link>
+              <ArrowButton 
+                text='View More' 
+                link='/movies/nowPlaying'
+              />
             </div>
             {popular.length > 0 && <MovieList movies={popular} />}
           </div>
           <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Top Rated</h2>
-              <Link href='/movies/topRated'>View More</Link>
+              <ArrowButton 
+                text='View More' 
+                link='/movies/nowPlaying'
+              />
             </div>
             {topRated.length > 0 && <MovieList movies={topRated} />}
           </div>
 
         </div>
       </main>
-      
-      
-     
     </Fragment>
   )
 }

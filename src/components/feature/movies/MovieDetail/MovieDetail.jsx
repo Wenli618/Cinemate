@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Card from '@/components/common/Card';
 import Link from 'next/link';
 
+import ArrowButton from '../../ArrowButton';
+
 function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
   return (
     <div>
@@ -18,9 +20,12 @@ function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
           />
         </div>
         <div className={styles.detailsContainer}>
-          <Link href={homepage} target='_blank'>
-            <h1 className={styles.title}>{movie.title}</h1>
-          </Link>
+          <h1 className={styles.title}>{movie.title}</h1>
+          <ArrowButton 
+            text="Visit Homepage" 
+            link={homepage}
+            target='_blank'
+          />
           
           <div className={styles.info}>
             <div className={styles.infoItem}>

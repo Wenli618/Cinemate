@@ -40,6 +40,7 @@ function DetailPage({movie,casts,crews,trailer}) {
             height="315"
             src={trailerUrl}
             allow="encrypted-media"
+
           /> :
           <p>No trailer available</p>
           }

@@ -12,12 +12,12 @@ function Popular(props) {
         <title>CINEMATE | Popular</title>
         <meta 
           name='description'
-          description='Check the popular movies!'
+          description='Discover the most watched movies of the week!'
         />
       </Head>
       <HeroSection 
         title='Popular'
-        description='Check the popular movies!'
+        description='Discover the most watched movies of the week!'
         bgImage="/backgrounds/cinema.webp"
       />
       {popular.length > 0 && <MovieList movies={popular} />}
