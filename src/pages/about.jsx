@@ -6,7 +6,7 @@ function AboutPage() {
         <HeroSection 
             title='About Cinemate' 
             description='Discover More About CineMate'
-            bgImage="/backgrounds/cinema.jpg"
+            bgImage="/backgrounds/cinema.webp"
         />
         <div className="aboutContainer">
             <p>Welcome to CineMate, your ultimate destination for all things movies! At CineMate, we are passionate about bringing the magic of cinema to your fingertips. Whether you&apos;re a casual moviegoer or a dedicated film buff, our platform is designed to provide you with comprehensive information about the latest releases, current showings, and the most popular movies.</p>

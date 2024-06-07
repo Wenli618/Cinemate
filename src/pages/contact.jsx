@@ -6,7 +6,7 @@ function ContactPage() {
         <HeroSection 
          title='Contact US' 
          description='Get in Touch with Cinemate Support'  
-         bgImage="/backgrounds/cinema.jpg"
+          bgImage="/backgrounds/cinema.webp"
         />
         <div className="contactDiv">
             <h2>Contact Cinemate</h2>

@@ -20,31 +20,31 @@ function HomePage({nowPlaying,upcoming,popular,topRated}) {
         <HeroSection 
           title='Your Ultimate MOVIE Guide' 
           description="Whether you&apos;re a movie enthusiast or just looking for something to watch, we&apos;ve got you covered!"
-          bgImage="/backgrounds/cinema.jpg"
+          bgImage="/backgrounds/cinema.webp"
         />
         <div className='movieSection'>
-          <div className='movieContainer'>
+          <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Now Playing</h2>
               <Link href='/movies/nowPlaying'>View More</Link>
             </div>
             {nowPlaying.length > 0 && <MovieList movies={nowPlaying} />}
           </div>
-          <div className='movieContainer'>
+          <div className='moviesContainer'>
             <div className='titleRow'>
               <h2 >Upcoming</h2>
               <Link href='/movies/upcoming'>View More</Link>
             </div>
             {upcoming.length > 0 && <MovieList movies={upcoming} />}
           </div>
-          <div className='movieContainer'>
+          <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Popular</h2>
               <Link href='/movies/popular'>View More</Link>
             </div>
             {popular.length > 0 && <MovieList movies={popular} />}
           </div>
-          <div className='movieContainer'>
+          <div className='moviesContainer'>
             <div className='titleRow'>
               <h2>Top Rated</h2>
               <Link href='/movies/topRated'>View More</Link>

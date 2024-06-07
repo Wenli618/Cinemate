@@ -19,7 +19,7 @@ function NowPlaying(props) {
       <HeroSection 
         title='Now Playing'
         description='Stay updated with the latest movies now playing in theaters.'
-        bgImage='/backgrounds/cinema.jpg'
+        bgImage="/backgrounds/cinema.webp"
       />
      
       {nowPlaying.length > 0 && <MovieList movies={nowPlaying} />}

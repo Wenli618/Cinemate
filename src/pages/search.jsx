@@ -16,7 +16,7 @@ function search() {
         <HeroSection 
           title='Search Movie' 
           description="Uncover Your Next Favorite Flick"
-          bgImage="/backgrounds/cinema.jpg"
+          bgImage="/backgrounds/cinema.webp"
         />
         <div className='searchContainer'>
             <h1>In production...</h1>

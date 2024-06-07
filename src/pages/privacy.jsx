@@ -7,7 +7,7 @@ function PrivacyPage() {
         <HeroSection 
             title='Privacy Policy' 
             
-            bgImage="/backgrounds/cinema.jpg"
+            bgImage="/backgrounds/cinema.webp"
         />
         <div className='privacy'>
             <div className="privacySection">

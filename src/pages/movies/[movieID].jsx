@@ -31,8 +31,6 @@ function DetailPage({movie,casts,crews,trailer}) {
         cast={cast}
         homepage={homePage}
       />
-      <div>
-      </div>
       <div className='trailer'>
           <h2>Trailer</h2>
           {
@@ -41,7 +39,6 @@ function DetailPage({movie,casts,crews,trailer}) {
             width="560"
             height="315"
             src={trailerUrl}
-            frameBorder="0"
             allow="encrypted-media"
           /> :
           <p>No trailer available</p>

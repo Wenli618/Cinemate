@@ -6,9 +6,9 @@ function NotFound() {
   return (
     <div>
         <HeroSection 
-            title='Oops! 404' 
-            description='The page you are looking for does not exist'
-            bgImage="/backgrounds/notfound-min.webp"
+            title='Oops!' 
+            description='The page you are looking for does not exist.'
+            bgImage="/backgrounds/404.png"
             isOverlay = {true}
         />
         <div className="notFoundContainer">

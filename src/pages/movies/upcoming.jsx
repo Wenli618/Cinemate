@@ -19,7 +19,7 @@ function Upcoming(props) {
       <HeroSection 
         title='Upcoming'
         description='Stay updated with the upcoming movies!'
-        bgImage='/backgrounds/cinema.jpg'
+        bgImage="/backgrounds/cinema.webp"
       />
       {upcoming.length > 0 && <MovieList movies={upcoming} />}
     </Fragment>

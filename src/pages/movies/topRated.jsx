@@ -19,7 +19,7 @@ function TopRated(props) {
       <HeroSection 
         title='Top Rated'
         description='Review top-rated movies!'
-        bgImage='/backgrounds/cinema.jpg'
+        bgImage="/backgrounds/cinema.webp"
       />
 
       {topRated.length > 0 && <MovieList movies={topRated} />}

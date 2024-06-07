@@ -18,7 +18,7 @@ function Popular(props) {
       <HeroSection 
         title='Popular'
         description='Check the popular movies!'
-        bgImage='/backgrounds/cinema.jpg'
+        bgImage="/backgrounds/cinema.webp"
       />
       {popular.length > 0 && <MovieList movies={popular} />}
     </Fragment>
