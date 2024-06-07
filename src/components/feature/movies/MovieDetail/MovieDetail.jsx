@@ -12,7 +12,6 @@ function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
           <Image 
             src={posterUrl} 
             alt={movie.title} 
-            layout="responsive"
             width={200}
             height={300}
             className={styles.image}

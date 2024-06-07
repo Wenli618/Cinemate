@@ -27,6 +27,7 @@ module.exports = (phase) => {
       if (isProd) return 'https://YOUR-DOMAIN-HERE.vercel.app/'
     })(),
     MOVIE_API_KEY: process.env.MOVIE_API_KEY,
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
   }
 
   // Next.config returns an object
