@@ -17,9 +17,7 @@ function MovieList(props) {
             id={movie.id}
             posterUrl={posterUrl}
             title={movie.title}
-            releaseDate={movie.release_date}
             voteAverage={movie.vote_average}
-            overview={movie.overview}
           />
         )
         

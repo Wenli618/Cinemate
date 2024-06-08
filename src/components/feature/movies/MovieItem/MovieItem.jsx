@@ -4,7 +4,7 @@ import Card from '@/components/common/Card';
 import Link from 'next/link';
 
 function MovieItem(props) {
-  const {posterUrl, title, id, releaseDate,voteAverage} = props
+  const {posterUrl, title, id,voteAverage} = props
   const score = voteAverage.toFixed(1)
   return (
     <Card size="grid">
