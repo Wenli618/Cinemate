@@ -1,6 +1,10 @@
+
 import { Fragment } from 'react';
+import HeroSection from '@/components/feature/HeroSection';
 import Head from 'next/head';
-import HeroSection from "@/components/feature/HeroSection"
+// import Image from 'next/image';
+
+
 
 function search() {
   return (
@@ -18,9 +22,20 @@ function search() {
           description="Uncover Your Next Favorite Flick"
           bgImage="/backgrounds/cinema.webp"
         />
-        <div className='searchContainer'>
-            <h1>In production...</h1>
-        </div>
+        {/* <div className='searchContainer'>
+          <div className='searchBar'>
+            <input/>
+            <button>
+              <Image 
+                src="/images/film-reel-svgrepo-com.svg"
+                width={33}
+                height={33}
+                alt="search"
+              />
+            </button>
+          </div>
+            
+        </div> */}
 
     </Fragment>
   )

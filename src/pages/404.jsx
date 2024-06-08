@@ -14,7 +14,7 @@ function NotFound() {
             isOverlay = {true}
         />
         <div className="notFoundContainer">
-        <ArrowButton 
+          <ArrowButton 
                 text='Reel Back' 
                 link='/movies/nowPlaying'
               />
