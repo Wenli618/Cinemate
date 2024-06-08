@@ -10,7 +10,7 @@ function NotFound() {
         <HeroSection 
             title='Oops!' 
             description='The page you are looking for does not exist.'
-            bgImage="/backgrounds/404.png"
+            bgImage="/backgrounds/notfound-min.jpg"
             isOverlay = {true}
         />
         <div className="notFoundContainer">

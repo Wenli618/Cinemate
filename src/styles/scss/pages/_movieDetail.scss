@@ -6,14 +6,15 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 85vw;
+    width: 85%;
     max-width: 1400px;
     .trailer{
         color: $complementaryColor;
         display: flex;
         flex-direction: column;
         gap:1rem;
-        width: 80vw;
+        width: 85vw;
+        overflow: hidden;
         h2{
             background-color: $primaryColor;
             border-radius: 10px;
@@ -21,6 +22,8 @@
         }
         iframe{
            align-self: center;
+           border: none;
+           border-radius: 5px;
            
         }
     }

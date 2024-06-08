@@ -6,11 +6,16 @@ html, body {
   background-color:  #0f141e;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  list-style: none;
 }
+

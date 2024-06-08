@@ -7,7 +7,7 @@ import ArrowButton from '../../ArrowButton';
 
 function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
   return (
-    <div>
+    <>
       <Card size="single">
       <div className={styles.container}>
         <div className={styles.imageContainer}>
@@ -57,7 +57,7 @@ function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
       </div>
       </Card>
       
-    </div>
+    </>
    
     
   );
