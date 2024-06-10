@@ -21,38 +21,57 @@ function MovieDetail({ movie, posterUrl, directedBy, cast, homepage }) {
         </div>
         <div className={styles.detailsContainer}>
           <h1 className={styles.title}>{movie.title}</h1>
-          <ArrowButton 
+          {homepage && <ArrowButton 
             text="Visit Homepage" 
             link={homepage}
             target='_blank'
-          />
+          />}
+
+          
           
           <div className={styles.info}>
-            <div className={styles.infoItem}>
-              <h3>Score:</h3>
-              <p>{movie.vote_average}</p>
-            </div>
-            <div className={styles.infoItem}>
+
+              <div className={styles.infoItem}>
+                <h3>Score:</h3>
+                <p>{movie.vote_average}</p>
+              </div>
+            
+            {movie.runtime > 0 &&
+              <div className={styles.infoItem}>
               <h3>Runtime:</h3>
               <p>{`${movie.runtime} min`}</p>
-            </div>
-            <div className={styles.infoItem}>
+              </div>
+            }
+            
+            {movie.release_date && 
+              <div className={styles.infoItem}>
               <h3>Release Date:</h3>
               <p>{movie.release_date}</p>
-            </div>
+              </div>
+            }
           </div>
-          <div>
+
+          {movie.overview &&
+            <div>
             <h3>Overview</h3>
             <p>{movie.overview}</p>
-          </div>
-          <div>
+            </div>
+          }
+          
+
+          {directedBy && 
+            <div>
             <h3>Directed By</h3>
             <p>{directedBy}</p>
-          </div>
-          <div>
+            </div>
+          }
+          
+          {cast &&
+            <div>
             <h3>Casted By</h3>
             <p>{cast}</p>
-          </div>
+            </div>
+          }
         </div>
       </div>
       </Card>

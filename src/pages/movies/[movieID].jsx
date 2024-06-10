@@ -35,14 +35,16 @@ function DetailPage({movie,casts,crews,trailer}) {
           <h2>Trailer</h2>
           {
             trailer && trailer.key ?
-            <iframe
-            width="560"
-            height="315"
-            src={trailerUrl}
-            allow="encrypted-media gyroscope"
-            allowfullscreen
-
-          /> :
+            <div className='iframeContainer'>
+              <iframe
+                width="560"
+                height="315"
+                src={trailerUrl}
+                allow="encrypted-media gyroscope"
+                allowfullscreen
+              />
+            </div>
+             :
           <p>No trailer available</p>
           }
           
