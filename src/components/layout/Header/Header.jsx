@@ -85,18 +85,6 @@ function Header() {
             <li>
               <Link className={styles.navLink} href='/about'>About</Link>
             </li>
-            {/* <li>
-              <Link className={styles.navLink} href='/movies/nowPlaying'>Now Playing</Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href='/movies/upcoming'>Upcoming</Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href='/movies/popular'>Popular</Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href='/movies/topRated'>Top Rated</Link>
-            </li> */}
           </ul>
         </nav>
         <div className={styles.menuToggle} onClick={handleMenuToggle} data-menu-button>

@@ -100,10 +100,6 @@
             }
           }
           
-          // .dropdown.active > .dropdownLink, .dropdownLink:hover{
-          //   color: $brandSkewColor;
-          // }
-          
           .dropdown.active > .dropdownButton + .dropdownMenu{
             display: flex;
             flex-direction: column;
